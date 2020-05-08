@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	
+	<link rel="stylesheet" href="css/iletisim.css">
+</head>
+<body>
+	<!--Header-->
+	
+	<header>
+		<div class="width960">
+	
+			<!--Logo-->
+	
+			<div class="logo">
+				<h1><a href="#">Sakarya Üniversitesi</a></h1>
+				<h6>Web Teknolojileri Proje Ödevi</h6>
+			</div>
+			<nav>
+				<ul>
+					<li><a href ="index.html">Hakkımda</a> </li>
+					<li><a href ="Egitim.html">Eğitim</a> </li>
+					<li><a href ="Şehrim.html">Şehrim</a> </li>
+					<li><a href ="İletisim.html">İletişim</a> </li>
+					<li><a href ="Mirasımız.html">Mirasımız</a> </li>
+					<li><a href ="Login.html">Login</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<!--Banner-->  <!--
+	<div class="width960">
+		<div class="banner">
+			<img src="https://www.unigardenyurt.com/wp-content/uploads/sakarya-universitesinin-en-iyi-bolumleri.jpg" width= "294px"  />
+		</div>
+	</div>    -->
+	
+	<!--Main-->
+	<section>
+		<div class="form">
+			<form action="" method="post" name="formName" id="form1" target="_self" onsubmit="return validateForm()">
+	<table>
+		<tr><td>Ad:</td><td><input type="text" id="name" name="name"/></td></tr>
+		<tr><td>E-posta:</td><td><input type="text" id="email" name="email"/></td></tr>
+    <tr><td> </td><td><input type="submit" value="Gönder"/></td></tr>
+		<tr><td> </td><td><input type="reset" id="submit" name="submit" value="Reset" onclick="checkForm();"/></td></tr>
+	</table>
+</form>
+		</div>
+		
+	</section>
+	
+	<div class="clear"></div>
+	
+	<!--Footer-->
+	<footer class = "footer2">
+		<div class="width960">
+			<ul>
+				<li><a href ="index.html">Hakkımda</a> </li>
+				<li><a href ="Egitim.html">Eğitim</a> </li>
+				<li><a href ="Şehrim.html">Şehrim</a> </li>
+				<li><a href ="İletisim.html">İletişim</a> </li>
+				<li><a href ="Mirasımız.html">Mirasımız</a> </li>
+				<li><a href ="Login.html">Login</a> </li>
+			</ul>
+			<div class = "copy">
+				HTML5 | CSS 
+			</div>
+		</div>
+	</footer>
+	
+	<script>
+	f
+function checkForm(){
+ alert("Form temizlenecek");
+ document.forms[0].reset();
+}
+
+function validateForm() {
+var isim=document.forms['form1'][0].value;
+var soyIsim =document.forms['form1'][1].value;
+if (isim==null ||isim=="")
+ {
+  alert("İsim kısmı boş bırakılamaz");
+  return false;
+}
+
+if (soyIsim==null || soyIsim=="")
+ {
+  alert("Soyisim kısmı boş bırakılamaz");
+  return false;
+ }
+}
+</script>
+	
+</body>
+</html>
